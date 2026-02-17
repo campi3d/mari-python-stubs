@@ -43,7 +43,7 @@ the folder must be added to the interpreter **and** marked as a **Source Root**.
 
 1. Open **Settings → Project → Python Interpreter**
 2. Click the ⚙️ icon → **Show All**
-3. Select your interpreter → **Paths**
+3. Select your interpreter → **Paths** (the hierarchy icon)
 4. Click **Add** and select the stub folder  
 5. Click **OK** → **Apply**
 
