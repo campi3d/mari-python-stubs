@@ -2,8 +2,39 @@ from typing import Any
 
 from . import current, examples, session, system, utils
 
-ExtensionPack: ExtensionPack
-ep: ExtensionPack
+TextureSetsPalette: Palette
+actions: ActionManager
+app: Application
+bakery: BakeryManager
+canvases: CanvasManager
+clock: Clock
+colors: Colors
+ddi: DDI
+environ: Environment
+event: Event
+exports: ExportManager
+geo: GeoManager
+gl_render: GLRender
+history: History
+images: ImageManager
+lights: LightManager
+menus: MenuManager
+misc: Miscellaneous
+multi_paint: MultiPaintManager
+nodes: NodeManager
+ocio: OpenColorIO
+palettes: PaletteManager
+particle: Particle
+patch_links: PatchLinksManager
+prefs: Preferences
+projection: ProjectionManager
+projectors: ProjectorManager
+projects: ProjectManager
+resources: ResourceInfo
+selection_groups: SelectionGroupManager
+shader_models: ShaderModelManager
+shelves: ShelfManager
+tools: ToolManager
 
 from . import API
 from . import Action
@@ -158,7 +189,6 @@ from . import Snapshotable
 from . import StringList
 from . import SwitchNode
 from . import TeleportNode
-from . import TextureSetsPalette
 from . import TextureSetsTabWidget
 from . import Tool
 from . import ToolBar
@@ -166,38 +196,6 @@ from . import ToolManager
 from . import UvIndexRangeList
 from . import VectorN
 from . import WidgetBase
-from . import actions
-from . import app
-from . import bakery
-from . import canvases
-from . import clock
-from . import colors
-from . import ddi
-from . import environ
-from . import event
-from . import exports
-from . import geo
-from . import gl_render
-from . import history
-from . import images
-from . import lights
-from . import menus
-from . import misc
-from . import multi_paint
-from . import nodes
-from . import ocio
-from . import palettes
-from . import particle
-from . import patch_links
-from . import prefs
-from . import projection
-from . import projectors
-from . import projects
-from . import resources
-from . import selection_groups
-from . import shader_models
-from . import shelves
-from . import tools
 
 API = API
 Action = Action
