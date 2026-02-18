@@ -66,12 +66,11 @@ If you have **Mari Extension Pack 6 R4 or newer**, you can regenerate the stubs 
 Run the following command inside Mari’s Python environment:
 
 ```python
-mari.ExtensionPack.dev.generatePythonStubs(self, target_directory: str)
+mari.ExtensionPack.dev.generatePythonStubs(target_directory: str)
 ```
 Example:
 ```python
 mari.ExtensionPack.dev.generatePythonStubs(
-    self,
     "D:/mari_stubs/Mari_75v2_ExtensionPack_6R4"
 )
 ```
