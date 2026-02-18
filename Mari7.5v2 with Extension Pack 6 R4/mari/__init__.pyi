@@ -2,8 +2,40 @@ from typing import Any
 
 from . import current, examples, session, system, utils
 
-ExtensionPack: ExtensionPack
-ep: ExtensionPack
+ModoRender: Palette
+TextureSetsPalette: Palette
+actions: ActionManager
+app: Application
+bakery: BakeryManager
+canvases: CanvasManager
+clock: Clock
+colors: Colors
+ddi: DDI
+environ: Environment
+event: Event
+exports: ExportManager
+geo: GeoManager
+gl_render: GLRender
+history: History
+images: ImageManager
+lights: LightManager
+menus: MenuManager
+misc: Miscellaneous
+multi_paint: MultiPaintManager
+nodes: NodeManager
+ocio: OpenColorIO
+palettes: PaletteManager
+particle: Particle
+patch_links: PatchLinksManager
+prefs: Preferences
+projection: ProjectionManager
+projectors: ProjectorManager
+projects: ProjectManager
+resources: ResourceInfo
+selection_groups: SelectionGroupManager
+shader_models: ShaderModelManager
+shelves: ShelfManager
+tools: ToolManager
 
 from . import API
 from . import Action
@@ -92,7 +124,6 @@ from . import MetaSignal
 from . import Metadata
 from . import Miscellaneous
 from . import ModoControlWidget
-from . import ModoRender
 from . import MultiChannelBakePointNode
 from . import MultiChannelContainer
 from . import MultiChannelGroup
@@ -157,7 +188,6 @@ from . import Snapshotable
 from . import StringList
 from . import SwitchNode
 from . import TeleportNode
-from . import TextureSetsPalette
 from . import TextureSetsTabWidget
 from . import Tool
 from . import ToolBar
@@ -165,39 +195,162 @@ from . import ToolManager
 from . import UvIndexRangeList
 from . import VectorN
 from . import WidgetBase
-from . import actions
-from . import app
-from . import bakery
-from . import canvases
-from . import clock
-from . import colors
-from . import ddi
-from . import environ
-from . import event
-from . import exports
-from . import geo
-from . import gl_render
-from . import history
-from . import images
-from . import lights
-from . import menus
-from . import misc
-from . import multi_paint
-from . import nodes
-from . import ocio
-from . import palettes
-from . import particle
-from . import patch_links
-from . import prefs
-from . import projection
-from . import projectors
-from . import projects
-from . import resources
-from . import selection_groups
-from . import shader_models
-from . import shelves
-from . import tools
 
+API = API
+Action = Action
+ActionManager = ActionManager
+AdjustableLayer = AdjustableLayer
+AdjustmentLayer = AdjustmentLayer
+AppVersion = AppVersion
+Application = Application
+BackdropNode = BackdropNode
+BakeItem = BakeItem
+BakePointLayer = BakePointLayer
+BakePointNode = BakePointNode
+BakeRecipe = BakeRecipe
+BakeSettings = BakeSettings
+BakeryManager = BakeryManager
+BakeryPreview = BakeryPreview
+BroadcastTeleportNode = BroadcastTeleportNode
+Camera = Camera
+Canvas = Canvas
+CanvasManager = CanvasManager
+Channel = Channel
+ChannelInfo = ChannelInfo
+ChannelLayer = ChannelLayer
+ChannelNode = ChannelNode
+ChannelSnapshot = ChannelSnapshot
+ClassInfo = ClassInfo
+Clock = Clock
+Color = Color
+Colors = Colors
+ColorspaceConfig = ColorspaceConfig
+ColorspaceDefaults = ColorspaceDefaults
+ComboBox = ComboBox
+CustomLUTFilter = CustomLUTFilter
+CustomProceduralLayer = CustomProceduralLayer
+CustomProceduralNode = CustomProceduralNode
+DDI = DDI
+Dialog = Dialog
+Environment = Environment
+EnvironmentLight = EnvironmentLight
+Event = Event
+ExportItem = ExportItem
+ExportManager = ExportManager
+FaceSelectionGroup = FaceSelectionGroup
+FileLUTFilter = FileLUTFilter
+FileList = FileList
+FloatSlider = FloatSlider
+GLRender = GLRender
+GLSLFilter = GLSLFilter
+GLSLFilterFactory = GLSLFilterFactory
+GeoChannel = GeoChannel
+GeoChannelNode = GeoChannelNode
+GeoEntity = GeoEntity
+GeoEntityVersion = GeoEntityVersion
+GeoManager = GeoManager
+GeoPatch = GeoPatch
+GeometryOperation = GeometryOperation
+GraphLayer = GraphLayer
+GroupLayer = GroupLayer
+GroupNode = GroupNode
+History = History
+Image = Image
+ImageManager = ImageManager
+ImageMimeDataInfo = ImageMimeDataInfo
+ImageOperation = ImageOperation
+ImageProtocolHandler = ImageProtocolHandler
+ImageSet = ImageSet
+IndexRangeList = IndexRangeList
+IndexRangeListWidget = IndexRangeListWidget
+IntSlider = IntSlider
+Layer = Layer
+LayerStack = LayerStack
+Light = Light
+LightManager = LightManager
+LineEdit = LineEdit
+LocatorEntity = LocatorEntity
+LocatorList = LocatorList
+Lockable = Lockable
+LookUpTable = LookUpTable
+MaterialNode = MaterialNode
+Matrix = Matrix
+MenuManager = MenuManager
+MessageBox = MessageBox
+MetaFunction = MetaFunction
+MetaSignal = MetaSignal
+Metadata = Metadata
+Miscellaneous = Miscellaneous
+MultiChannelBakePointNode = MultiChannelBakePointNode
+MultiChannelContainer = MultiChannelContainer
+MultiChannelGroup = MultiChannelGroup
+MultiChannelGroupLayer = MultiChannelGroupLayer
+MultiChannelLayer = MultiChannelLayer
+MultiChannelMaterial = MultiChannelMaterial
+MultiChannelMaterialLayer = MultiChannelMaterialLayer
+MultiChannelPaintNode = MultiChannelPaintNode
+MultiPaintManager = MultiPaintManager
+Node = Node
+NodeContext = NodeContext
+NodeGraph = NodeGraph
+NodeGraphPalette = NodeGraphPalette
+NodeGraphView = NodeGraphView
+NodeManager = NodeManager
+ObjectSelectionGroup = ObjectSelectionGroup
+OpenColorIO = OpenColorIO
+PaintBuffer = PaintBuffer
+PaintNode = PaintNode
+PaintableLayer = PaintableLayer
+Palette = Palette
+PaletteManager = PaletteManager
+Particle = Particle
+ParticleOp = ParticleOp
+PatchLinksManager = PatchLinksManager
+PatchSelectionGroup = PatchSelectionGroup
+PointLight = PointLight
+PostFilter = PostFilter
+PostFilterCollection = PostFilterCollection
+Preferences = Preferences
+ProceduralLayer = ProceduralLayer
+Project = Project
+ProjectInfo = ProjectInfo
+ProjectManager = ProjectManager
+ProjectionManager = ProjectionManager
+Projector = Projector
+ProjectorManager = ProjectorManager
+Property = Property
+PropertySource = PropertySource
+PropertyWidget = PropertyWidget
+Ptex = Ptex
+ReceiverTeleportNode = ReceiverTeleportNode
+ResourceInfo = ResourceInfo
+ScriptAction = ScriptAction
+SelectionGroup = SelectionGroup
+SelectionGroupManager = SelectionGroupManager
+Settings = Settings
+Shader = Shader
+ShaderLayer = ShaderLayer
+ShaderModel = ShaderModel
+ShaderModelInput = ShaderModelInput
+ShaderModelManager = ShaderModelManager
+Shelf = Shelf
+ShelfItem = ShelfItem
+ShelfManager = ShelfManager
+Signal = Signal
+SignalInstance = SignalInstance
+SliderBase = SliderBase
+Slot = Slot
+Snapshot = Snapshot
+Snapshotable = Snapshotable
+StringList = StringList
+SwitchNode = SwitchNode
+TeleportNode = TeleportNode
+Tool = Tool
+ToolBar = ToolBar
+ToolManager = ToolManager
+UvIndexRangeList = UvIndexRangeList
+VectorN = VectorN
+WidgetBase = WidgetBase
 ep = ExtensionPack
 ExtensionPack = ExtensionPack
 
