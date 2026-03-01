@@ -27,7 +27,7 @@ The stub folder is the one that directly contains the folder with the `.pyi` fil
 
 1. Open **Settings**
 2. Search for **Python: Analysis Extra Paths**
-3. Add the path to the stub folder, for example:
+3. Add the path to the stub folder
 4. Reload VS Code
 
 The `mari` module will now provide full autocomplete and type hints.
